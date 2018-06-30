@@ -1,4 +1,4 @@
-
+"use strict";
 class Entity {
   constructor(x, y) {
     this.x = x;
@@ -7,7 +7,7 @@ class Entity {
 
   update(dt) {
     this.offCanvasX = this.x < 1 || this.x > 500;
-    this.offCanvasY = this.y < 1 || this.x > 600;
+    //this.offCanvasY = this.y < 1 || this.x > 600;
 
   }
   render() {
@@ -48,16 +48,16 @@ class Player extends Entity {
     }
   }
   checkCollisions() {
-    if(this.y >= Enemy.y - 40 && this.y <= Enemy.y + 40){
-     if(this.x >= Enemy.x - 40 && this.x <=
-       Enemy.x + 40 ){
-       player.x = 200;
-       player.y = 400;
+    if(this.y >= allEnemies.y - 40 && this.y <= allEnemies.y + 40){
+     if(this.x >= allEnemies.x - 40 && this.x <=
+       allEnemies.x + 40 ){
+       this.x = 200;
+       this.y = 400;
      }
     }
   }
   checkForWin(){
-    if(player.y <= 42) {
+    if(this.y <= 42) {
       const modal = document.getElementById('myModal');
       modal.style.display = "block";
     }

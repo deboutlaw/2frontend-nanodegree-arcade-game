@@ -12,7 +12,7 @@
  * This engine makes the canvas' context (ctx) object globally available to make
  * writing app.js a little simpler to work with.
  */
-
+"use strict";
 var Engine = (function(global) {
     /* Predefine the variables we'll be using within this scope,
      * create the canvas element, grab the 2D context for that canvas
@@ -90,14 +90,15 @@ span.onclick = function() {
   modal.style.display = "none";
   location.reload();
 };
-window.onclick = function(event) {
+window.onclick = function() {
   if (event.target == modal) {
     modal.style.display = "none";
+    location.reload();
   }
 };
 
  function checkForWin() {
-  player.checkForWin();
+   player.checkForWin();
  }
 
 function checkCollisions() {

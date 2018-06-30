@@ -2,7 +2,7 @@
 This is an online arcade style game  to test your wits! Using the arrow keys you must move your player to the water, without colliding with any of the  enemy bugs!
 
 ##Installing
-*clone or download from: https://github.com/deboutlaw/frontend-nanodegree-arcade-game
+*clone or download from: https://github.com/deboutlaw/2frontend-nanodegree-arcade-game
 *navigate to your folder
 *open `index.html` in your browser
 
