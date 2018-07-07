@@ -6,5 +6,9 @@ This is an online arcade style game  to test your wits! Using the arrow keys you
 *navigate to your folder
 *open `index.html` in your browser
 
+##Live link
+ https://deboutlaw.github.io/2frontend-nanodegree-arcade-game/
+ Have fun!
+
 
 ###Hat tip to my mentor and the ppl on fb group "Udacity Front-End Web Developer Nanodegree Support" and Udacity for the webinars!
